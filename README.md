@@ -36,7 +36,7 @@ module.exports = {
 
 ### Options
 
-By default, core plugins with the same feature are disabled. If you want to enable them, set the `disableCorePlugin` option to `false`.
+By default, core plugins with the same feature are disabled. If you want to enable them, set the `disableCorePlugins` option to `false`.
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-vanilla')({
-      disableCorePlugin: false,
+      disableCorePlugins: false,
     }),
     // ...
   ],

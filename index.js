@@ -1250,8 +1250,8 @@ module.exports = plugin.withOptions(
       })
     }
   },
-  ({ disableCorePlugin } = { disableCorePlugin: true }) => {
-    if (disableCorePlugin) {
+  ({ disableCorePlugins } = { disableCorePlugins: true }) => {
+    if (disableCorePlugins) {
       return {
         corePlugins: Object.entries(plugins).reduce((acc, [key]) => {
           acc[key] = false
