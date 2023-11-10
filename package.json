@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-vanilla",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Tailwind CSS plugin that allows CSS properties to be used in utility classes without modification.",
   "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/ixkaito/tailwindcss-vanilla",

@@ -1,5 +1,16 @@
 # tailwindcss-vanilla
 
+A Tailwind CSS plugin that allows CSS properties to be used in utility classes without modification.
+
+## Example
+
+```html
+<div class="border-radius-lg background-color-black padding-8 color-white">
+  <h1 class="font-size-2xl">...</h1>
+  <p class="line-height-loose">...</p>
+</div>
+```
+
 ## Installation
 
 Install the plugin from npm:
@@ -23,8 +34,21 @@ module.exports = {
 }
 ```
 
-## Usage
+### Options
 
-```html
-<p class="font-size-4 ...">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+By default, core plugins with the same feature are disabled. If you want to enable them, set the `disableCorePlugin` option to `false`.
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('tailwindcss-vanilla')({
+      disableCorePlugin: false,
+    }),
+    // ...
+  ],
+}
 ```
