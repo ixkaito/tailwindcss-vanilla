@@ -13,7 +13,8 @@
     "tailwindcss",
     "plugin",
     "css",
-    "vanilacss"
+    "vanilla",
+    "vanilla css"
   ],
   "prettier": {
     "printWidth": 100,
